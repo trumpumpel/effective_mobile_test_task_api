@@ -23,7 +23,7 @@ def create_repo():
     return response.status_code == 201
 
 
-def check_repo_exists():
+def check_if_repo_exists():
     url = f"{GITHUB_API_URL}/repos/{USERNAME}/{REPO_NAME}"
     headers = {
         "Authorization": f"token {TOKEN}"
@@ -44,7 +44,7 @@ def delete_repo():
 if __name__ == "__main__":
     if create_repo():
         print("Репозиторий успешно создан.")
-        if check_repo_exists():
+        if check_if_repo_exists():
             print("Репозиторий существует.")
             if delete_repo():
                 print("Репозиторий успешно удален.")

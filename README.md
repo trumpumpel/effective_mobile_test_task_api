@@ -1,8 +1,10 @@
-Этот проект предназначен для автоматического тестирования работы с GitHub API. 
+Проект предназначен для автоматического тестирования работы с GitHub API. 
+Используются Python, Requests и Python-dotenv.
 Скрипт создает новый публичный репозиторий, проверяет его наличие и удаляет его.
 
 1. Клонируйте репозиторий:
-
+git clone https://github.com/trumpumpel/effective_mobile_test_task_api
+cd effective_mobile_test_task_api
 
 
 2. Установите зависимости:
